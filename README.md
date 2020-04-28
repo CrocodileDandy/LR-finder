@@ -31,6 +31,13 @@ People have been very creative when it comes to implementing an approximate solu
 | DanielHsH | 2015 | [matlab - How can I detect the maximum-sized rectangle that I can draw onto the mask? - Stack Overflow](https://stackoverflow.com/questions/30133895/how-can-i-detect-the-maximum-sized-rectangle-that-i-can-draw-onto-the-mask) | Convex (?) | Axis-Aligned (?) | ? | Uses [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming), in matlab |
 | Daniel Smilkov | 2014 | [Largest rectangle in a polygon \| D3plus](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect/) | Arbitrary | Free | ? | Iterative search, in javascript |
 
+## To-Do
+Things that must be done to start something:
+- choose a convenient representation for polygons,
+- make sure this representation is compatible with Skimage for instance as the probably most useful application will be image processing,
+- start implementing a simple algorithm like [Largest rectangle in a polygon \| D3plus](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect/).
+- think about tests for algorithms, guarantee we don't break them and benchmark algorithms. Known exact solutions are welcome.
+
 ## Software That May Help
 
 ### Python Modules
@@ -48,11 +55,10 @@ Has stuff like convex hull, bounding box, erosion, dilation (like Shapely) and c
 #### OpenCV
 OpenCV has more or less the same stuff than Skimage but also a minimum bounding box obtained with `rotatedRectangle()` or `minAreaRect()`: [OpenCV: Contour Features](https://docs.opencv.org/3.4/dd/d49/tutorial_py_contour_features.html)
 
-
 ## References:
-[Boland01]: [CiteSeerX — Finding the Largest Axis-Aligned Rectangle in a Polygon in ...](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.20.7210)
-[Knauer12]: [Redirecting](https://doi.org/10.1016/j.jda.2012.01.002)
-[Molano12]: [Redirecting](https://doi.org/10.1016/j.amc.2012.03.063)
-[Cabello12]: [Redirecting](https://doi.org/10.1016/j.comgeo.2015.08.001)
-[Sarkar18]: [Redirecting](https://doi.org/10.1016/j.jcss.2017.05.006)
+[Boland01]: [CiteSeerX — Finding the Largest Axis-Aligned Rectangle in a Polygon in ...](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.20.7210)\
+[Knauer12]: [Redirecting](https://doi.org/10.1016/j.jda.2012.01.002)\
+[Molano12]: [Redirecting](https://doi.org/10.1016/j.amc.2012.03.063)\
+[Cabello12]: [Redirecting](https://doi.org/10.1016/j.comgeo.2015.08.001)\
+[Sarkar18]: [Redirecting](https://doi.org/10.1016/j.jcss.2017.05.006)\
 [Abu-Qasmieh18]: [Current Links for doi: 10.1049/iet-ipr.2017.0509](https://doi.org/10.1049/iet-ipr.2017.0509)
